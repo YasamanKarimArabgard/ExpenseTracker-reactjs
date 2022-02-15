@@ -6,6 +6,7 @@ function App() {
     <div className="App col-12 d-flex flex-column align-items-center bg-light">
       <header className="App-header">
         <h2 className="mt-4">Expense Tracker</h2>
+        <h6 className="text-center">by Jasmine</h6>
       </header>
       <ExpenseApp/>
     </div>
