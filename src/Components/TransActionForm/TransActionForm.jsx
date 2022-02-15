@@ -1,37 +1,48 @@
 import React, { useState } from 'react';
 
-const TransActionForm = () => {
+const TransActionForm = ({ addTransAction, setIsShow }) => {
 
     const [formValue, setFormValue] = useState({
-        amount: 0,
+        amount: '',
         desc: ''
     });
 
     const onChangeHandler = (e) => {
-        setFormValue({...formValue, [e.target.name] : e.target.value})
+        setFormValue({ ...formValue, [e.target.name]: e.target.value })
+    }
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+        addTransAction(formValue)
+        setIsShow((prevState) => !prevState)
     }
 
     return (
-        <form className='form-group'>
+        <form className='form-group border rounded my-2 d-flex flex-column p-1' onSubmit={submitHandler}>
             <div className='d-flex flex-column'>
                 <input type='text'
                     name='desc'
-                    className='w-75'
+                    className='form-control'
                     onChange={onChangeHandler}
                     value={formValue.desc}
+                    placeholder='description'
                 />
                 <input type='number'
                     name='amount' c
-                    lassName='w-75'
+                    className='form-control'
                     onChange={onChangeHandler}
-                    value={formValue.amount} />
+                    value={formValue.amount}
+                    placeholder='amount'
+                />
             </div>
-            <div className='d-flex align-items-center'>
+            <div className='d-flex align-items-center my-2 mx-1'>
                 <input type='radio'
                     value='expense'
                     name='type'
                     onChange={onChangeHandler}
                     checked={formValue.type === 'expense'}
+                    className='form-check-input mx-1'
+                    placeholder='amount'
                 />
                 <label>expense</label>
                 <input type='radio'
@@ -39,10 +50,11 @@ const TransActionForm = () => {
                     name='type'
                     onChange={onChangeHandler}
                     checked={formValue.type === 'income'}
+                    className='form-check-input mx-1'
                 />
                 <label>income</label>
             </div>
-            <button className='btn btn-sm btn-secondary'>Add Transaction</button>
+            <button className='btn btn-sm btn-success 100'>Add Transaction</button>
         </form>
     );
 };
