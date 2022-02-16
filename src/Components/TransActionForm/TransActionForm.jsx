@@ -26,6 +26,7 @@ const TransActionForm = ({ addTransAction, setIsShow }) => {
                     onChange={onChangeHandler}
                     value={formValue.desc}
                     placeholder='description'
+                    required
                 />
                 <input type='number'
                     name='amount' c
@@ -33,6 +34,7 @@ const TransActionForm = ({ addTransAction, setIsShow }) => {
                     onChange={onChangeHandler}
                     value={formValue.amount}
                     placeholder='amount'
+                    required
                 />
             </div>
             <div className='d-flex align-items-center my-2 mx-1'>
@@ -43,16 +45,18 @@ const TransActionForm = ({ addTransAction, setIsShow }) => {
                     checked={formValue.type === 'expense'}
                     className='form-check-input mx-1'
                     placeholder='amount'
+                    required
                 />
-                <label>expense</label>
+                <label>Expense</label>
                 <input type='radio'
                     value='income'
                     name='type'
                     onChange={onChangeHandler}
                     checked={formValue.type === 'income'}
                     className='form-check-input mx-1'
+                    required
                 />
-                <label>income</label>
+                <label>Income</label>
             </div>
             <button className='btn btn-sm btn-success 100'>Add Transaction</button>
         </form>
