@@ -23,7 +23,12 @@ const ExpenseApp = () => {
 
     return (
         <section className='col-11 col-sm-4 bg-white border rounded mt-3 p-1'>
-            <h2 className='text-center'>Dashboard</h2>
+            <div className='col-12 d-flex justify-content-between align-items-center'>
+                <h3 className='text-center'>Dashboard</h3>
+                <a href='https://github.com/YasamanKarimArabgard' className='text-black'>
+                    <i class="bi bi-person-circle mx-1" />
+                </a>
+            </div>
             <div className='rounded border p-1'>
                 <OverViewComponent expense={expense}
                     income={income}
