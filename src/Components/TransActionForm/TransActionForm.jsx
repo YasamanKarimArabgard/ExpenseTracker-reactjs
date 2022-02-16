@@ -22,7 +22,7 @@ const TransActionForm = ({ addTransAction, setIsShow }) => {
             <div className='d-flex flex-column'>
                 <input type='text'
                     name='desc'
-                    className='form-control'
+                    className='form-control shadow-none'
                     onChange={onChangeHandler}
                     value={formValue.desc}
                     placeholder='description'
@@ -30,7 +30,7 @@ const TransActionForm = ({ addTransAction, setIsShow }) => {
                 />
                 <input type='number'
                     name='amount' c
-                    className='form-control'
+                    className='form-control shadow-none'
                     onChange={onChangeHandler}
                     value={formValue.amount}
                     placeholder='amount'
