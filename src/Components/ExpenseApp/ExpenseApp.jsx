@@ -25,9 +25,11 @@ const ExpenseApp = () => {
         <section className='col-11 col-sm-4 bg-white border rounded mt-3 p-1'>
             <h2 className='text-center'>Dashboard</h2>
             <div className='rounded border p-1'>
-                <OverViewComponent expense={expense} income={income} addTransAction={addTransAction} />
+                <OverViewComponent expense={expense}
+                    income={income}
+                    addTransAction={addTransAction} />
             </div>
-                <TransActionComponenet transActions={transActions} setTransActions={setTransActions} />
+            <TransActionComponenet transActions={transActions} setTransActions={setTransActions} />
         </section>
     );
 };
