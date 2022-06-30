@@ -29,7 +29,7 @@ const ExpenseApp = () => {
                     <i class="bi bi-person-circle mx-1" />
                 </a>
             </div>
-            <div className='rounded border p-1'>
+            <div className='rounded p-1'>
                 <OverViewComponent expense={expense}
                     income={income}
                     addTransAction={addTransAction} />

@@ -31,6 +31,7 @@ const TransActionComponenet = ({ transActions, setTransActions }) => {
 
 
     if (filtetdTnx.length == 0) return null;
+    
     return (
         <section className='col-12 rounded border p-1 mt-2 d-flex flex-wrap justify-content-evenly'>
           <div className='col-12 d-flex justify-content-evenly align-items-end mb-1 mt-2'>

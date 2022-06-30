@@ -58,7 +58,7 @@ const TransActionForm = ({ addTransAction, setIsShow }) => {
                 />
                 <label>Income</label>
             </div>
-            <button className='btn btn-sm btn-success 100'>Add Transaction</button>
+            <button className='btn btn-sm btn-success 100 mb-1'>Add Transaction</button>
         </form>
     );
 };

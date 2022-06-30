@@ -16,13 +16,13 @@ return (
         </div>
         {isShow && <TransActionForm addTransAction={addTransAction} setIsShow={setIsShow} />}
         <div className='col-12 d-flex flex-column my-2'>
-            <div className='col-12 d-flex justify-content-between'>
-                <div className='col-6 border rounded p-2 d-flex justify-content-between'>
-                    <h6>Income</h6>
+            <div className='col-12 d-flex justify-content-around flex-wrap'>
+                <div className='col-12 border rounded p-2 d-flex justify-content-between mb-1'>
+                    <h6 className='text-success'>Income</h6>
                     <h6 className='text-success'>{income}$</h6>
                 </div>
-                <div className='col-6 border rounded p-2 d-flex justify-content-between'>
-                    <h6>Expense</h6>
+                <div className='col-12 border rounded p-2 d-flex justify-content-between'>
+                    <h6 className='text-danger'>Expense</h6>
                     <h6 className='text-danger'>{expense}$</h6>
                 </div>
             </div>
