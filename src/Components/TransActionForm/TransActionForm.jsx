@@ -38,25 +38,26 @@ const TransActionForm = ({ addTransAction, setIsShow }) => {
                 />
             </div>
             <div className='d-flex align-items-center my-2 mx-1'>
-                <input type='radio'
-                    value='expense'
-                    name='type'
-                    onChange={onChangeHandler}
-                    checked={formValue.type === 'expense'}
-                    className='form-check-input mx-1'
-                    placeholder='amount'
-                    required
-                />
-                <label>Expense</label>
-                <input type='radio'
-                    value='income'
-                    name='type'
-                    onChange={onChangeHandler}
-                    checked={formValue.type === 'income'}
-                    className='form-check-input mx-1'
-                    required
-                />
-                <label>Income</label>
+                <label>
+                    <input type='radio'
+                        value='expense'
+                        name='type'
+                        onChange={onChangeHandler}
+                        checked={formValue.type === 'expense'}
+                        className='form-check-input mx-1'
+                        placeholder='amount'
+                        required></input>
+                    Expense</label>
+                <label>
+                    <input type='radio'
+                        value='income'
+                        name='type'
+                        onChange={onChangeHandler}
+                        checked={formValue.type === 'income'}
+                        className='form-check-input mx-1'
+                        required
+                    />
+                    Income</label>
             </div>
             <button className='btn btn-sm btn-success 100 mb-1'>Add Transaction</button>
         </form>
