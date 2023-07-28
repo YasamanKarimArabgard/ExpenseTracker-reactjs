@@ -1,5 +1,3 @@
-Hi, everyone this is my EpenseTracker App !
-my perpose of creating this App was :
-working with form like
-inputs , ...
-hope you will like it!
+Call and use API then use its methods like POST, PUT, GET, … on data</br>
+•	Manage errors</br>
+•	Make a user-friendly UI</br>
