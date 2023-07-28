@@ -1,4 +1,4 @@
 ### about :
-Call and use API then use its methods like POST, PUT, GET, … on data</br>
-•	Manage errors</br>
-•	Make a user-friendly UI</br>
+A project which allows you to monitor and categorize your expenses in addition you are able to add topic and make a list of what did you do about your money.
+
+
